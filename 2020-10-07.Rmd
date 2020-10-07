@@ -1,0 +1,57 @@
+---
+title: "課堂練習模版"
+author: "陳廷維"
+date: "2020-10-07"
+output: output_format
+params:
+  id: "410973083"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Your code
+
+```{r}
+a <- 15 # 變數設定
+b <- a # 呼叫a的值，用來設定變數b的值，相當於 b <- 15
+y <- 22
+c <- y
+```
+```{r}
+myName <-("Oscar")
+length(myName) # 查看物件本身代表幾個值。
+```
+```{r}
+num1 <- 5
+vNum1 <- c(2,5)
+vNum2 <- c(2, num1)
+```
+```{r}
+num1 <- 5
+num2 <- c(5)
+```
+```{r}
+vNum1 <- c(-1,5)
+vNum2 <- c(2,3)
+vNum3 <- c(vNum1,vNum2)
+vNum4 <- c(-1,5,2,3)
+vNum5 <- c(c(-1,5),c(2,3))
+```
+```{r}
+heightsOftheEntireClassroom <- c()
+
+heightsOftheEntireClassroom2 <- c()
+heightOfAStudentComingInsideTheClassroom <- sample(165:200,1)
+# method 1: concatenate 
+heightsOftheEntireClassroom <-
+  c(
+    heightsOftheEntireClassroom,
+    heightOfAStudentComingInsideTheClassroom
+  )
+# method 2: 
+heightsOftheEntireClassroom2 <-
+  heightOfAStudentComingInsideTheClassroom
+```
+```{r}
